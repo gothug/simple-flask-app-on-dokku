@@ -7,3 +7,8 @@ exp2: ssh -i ~/.ssh/id_rsa_digitalocean root@95.85.49.94
 2. Run worker:
 
 dokku run little-flask-app python worker.py
+
+3. Deploy on digitalocean with dokku:
+
+ssh-add ~/.ssh/id_rsa_digitalocean
+git push dokku master
